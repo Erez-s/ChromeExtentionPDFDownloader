@@ -1,0 +1,16 @@
+body {
+    height: 500;
+    width: 200;
+}
+button {
+    height: 6%;
+    width: 100%;
+}
+.center {
+    text-align: center;
+    list-style-position: inside;
+  }
+
+text {
+    font-size: 4px;
+}

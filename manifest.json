@@ -1,0 +1,23 @@
+{
+    "name": "Erez's PDFS",
+    "description": "Download every PDF file on a web page",
+    "version": "0.0.0.1",
+    "permissions": ["<all_urls>", "tabs", "activeTab", "downloads"],
+    "icons":{
+        "16":"icon16.png",
+        "48":"icon48.png",
+        "128":"icon128.png"
+
+    },
+    "browser_action": {
+        "default_popup": "popup/index.html"
+    },
+    "background": {
+        "scripts": ["jquery-3.4.1.min.js", "background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["jquery-3.4.1.min.js", "content.js"]
+    }],
+    "manifest_version": 2
+}
